@@ -13,3 +13,7 @@ run_g_stdlib_tests: compile_g_stdlib_tests
 	@echo ""
 	@echo "Running g_stdlib tests..."
 	./g_stdlib_tests.out
+
+run_examples:
+	$(CC) -o examples.out ./examples.c $(G_STDLIB_FILES)
+	./examples.out
