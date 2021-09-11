@@ -1,5 +1,5 @@
 CC = gcc
-G_STDLIB_FILES = ./g_stdlib/g_memset.c
+G_STDLIB_FILES = ./lib/g_stdlib/g_memset.c
 
 compile_g_stdlib_tests:
 	@echo "Compiling g_stdlib tests..."
