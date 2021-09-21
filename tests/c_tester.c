@@ -19,6 +19,10 @@ void check_null(void *target, char caller[], int line) {
     print_result(*converted_target == '\0', caller, line);
 }
 
+void call_print_result(bool assertion_result, char caller[], int line) {
+    print_result(assertion_result, caller, line);
+}
+
 void print_result(bool assertion_result, char caller[], int line) {
     if (assertion_result) {
         printf("\033[0;32m");
