@@ -1,9 +1,9 @@
 #include <stdint.h>
 #include "tests.h"
 
-void when_all_parameters_are_right();
-void when_a_null_pointer_are_sent();
-void when_count_is_greater_than_size_max();
+static void when_all_parameters_are_right();
+static void when_a_null_pointer_are_sent();
+static void when_count_is_greater_than_size_max();
 
 void run_g_memset_tests() {
     when_all_parameters_are_right();
@@ -11,7 +11,7 @@ void run_g_memset_tests() {
     when_count_is_greater_than_size_max();
 }
 
-void when_all_parameters_are_right() {
+static void when_all_parameters_are_right() {
     char str[] = "ghghghghghghghghghghgh";
 
     char *result = (char *)g_memset(&str, 'a', 5);
@@ -21,7 +21,7 @@ void when_all_parameters_are_right() {
     assert(result == str);
 }
 
-void when_a_null_pointer_are_sent() {
+static void when_a_null_pointer_are_sent() {
     char *null_pointer = NULL;
 
     char *result = (char *)g_memset(&null_pointer, 'a', 5);
@@ -30,7 +30,7 @@ void when_a_null_pointer_are_sent() {
     assert(result == NULL);
 }
 
-void when_count_is_greater_than_size_max() {
+static void when_count_is_greater_than_size_max() {
     char str[] = "ghghghghghghghghghghgh";
 
     char *result = (char *)g_memset(&str, 'a', SIZE_MAX + 1);
