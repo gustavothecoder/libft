@@ -14,11 +14,6 @@ void compare_strings(char string1[], char string2[], size_t size, char caller[],
     print_result(result, caller, line);
 }
 
-void check_null(void *target, char caller[], int line) {
-    unsigned char *converted_target = (unsigned char *)target;
-    print_result(*converted_target == '\0', caller, line);
-}
-
 void call_print_result(bool assertion_result, char caller[], int line) {
     print_result(assertion_result, caller, line);
 }
