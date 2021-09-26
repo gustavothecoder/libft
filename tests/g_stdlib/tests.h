@@ -3,3 +3,4 @@
 
 void run_g_memset_tests();
 void run_g_bzero_tests();
+void run_g_memcpy_tests();

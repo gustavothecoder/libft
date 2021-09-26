@@ -4,6 +4,7 @@
 int main() {
     run_g_memset_tests();
     run_g_bzero_tests();
+    run_g_memcpy_tests();
 
     return 0;
 }

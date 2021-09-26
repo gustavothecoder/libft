@@ -33,5 +33,5 @@ static void when_count_is_greater_than_size_max() {
 
     g_bzero(&str, SIZE_MAX + 1);
 
-    assert_string(str,  "ghghghghghghghghghghgh", 22);
+    assert_array(str,  "ghghghghghghghghghghgh", 22);
 }
