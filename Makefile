@@ -1,6 +1,7 @@
 CC = gcc
 G_STDLIB_FILES = ./lib/g_stdlib/g_memset.c \
-				 ./lib/g_stdlib/g_bzero.c
+				 ./lib/g_stdlib/g_bzero.c \
+				 ./lib/g_stdlib/g_memcpy.c
 
 compile_g_stdlib_tests:
 	@echo "Compiling g_stdlib tests..."
@@ -9,6 +10,7 @@ compile_g_stdlib_tests:
 		./tests/g_stdlib_tests.c \
 		./tests/g_stdlib/g_memset_tests.c \
 		./tests/g_stdlib/g_bzero_tests.c \
+		./tests/g_stdlib/g_memcpy_tests.c \
 		$(G_STDLIB_FILES)
 
 run_g_stdlib_tests: compile_g_stdlib_tests
