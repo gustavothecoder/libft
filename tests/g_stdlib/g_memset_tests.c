@@ -16,8 +16,8 @@ static void when_all_parameters_are_right() {
 
     char *result = (char *)g_memset(&str, 'a', 5);
 
-    assert_string(str,  "aaaaahghghghghghghghgh", 22);
-    assert_string(result, "aaaaahghghghghghghghgh", 22);
+    assert_array(str,  "aaaaahghghghghghghghgh", 22);
+    assert_array(result, "aaaaahghghghghghghghgh", 22);
     assert(result == str);
 }
 
@@ -35,6 +35,6 @@ static void when_count_is_greater_than_size_max() {
 
     char *result = (char *)g_memset(&str, 'a', SIZE_MAX + 1);
 
-    assert_string(str,  "ghghghghghghghghghghgh", 22);
+    assert_array(str,  "ghghghghghghghghghghgh", 22);
     assert(result != str);
 }
