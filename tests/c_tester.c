@@ -7,17 +7,6 @@ void call_print_result(bool assertion_result, char caller[], int line) {
     print_result(assertion_result, caller, line);
 }
 
-void compare_strings(char string1[], char string2[], size_t size, char caller[], int line) {
-    bool result = true;
-    for (int i = 0; i < size; i++) {
-        if (string1[i] != string2[i]) {
-            result = false;
-            break;
-        }
-    }
-    print_result(result, caller, line);
-}
-
 void compare_arrays(const void *arr1, const void *arr2, size_t sz, char caller[], int line) {
     unsigned char *a = (unsigned char*)arr1;
     unsigned char *b = (unsigned char*)arr2;
