@@ -1,10 +1,10 @@
 #include <stdbool.h>
 #include <stdint.h>
-#include "g_stdlib.h"
+#include "ft_libc.h"
 
 bool is_valid(void *dest, size_t count);
 
-void *g_memset(void *dest, int ch, size_t count) {
+void *ft_memset(void *dest, int ch, size_t count) {
     if (is_valid(dest, count)) {
         unsigned char converted_ch = (unsigned char) ch;
         unsigned char *dest_pointer = (unsigned char *) dest;
