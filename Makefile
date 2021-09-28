@@ -1,23 +1,23 @@
 CC = gcc
-G_STDLIB_FILES = ./lib/g_stdlib/g_memset.c \
-				 ./lib/g_stdlib/g_bzero.c \
-				 ./lib/g_stdlib/g_memcpy.c
+FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
+				./lib/ft_libc/ft_bzero.c \
+				./lib/ft_libc/ft_memcpy.c
 
-compile_g_stdlib_tests:
-	@echo "Compiling g_stdlib tests..."
-	$(CC) -o g_stdlib_tests.out \
+compile_ft_libc_tests:
+	@echo "Compiling ft_libc tests..."
+	$(CC) -o ft_libc_tests.out \
 		./tests/c_tester.c \
-		./tests/g_stdlib_tests.c \
-		./tests/g_stdlib/g_memset_tests.c \
-		./tests/g_stdlib/g_bzero_tests.c \
-		./tests/g_stdlib/g_memcpy_tests.c \
-		$(G_STDLIB_FILES)
+		./tests/ft_libc_tests.c \
+		./tests/ft_libc/ft_memset_tests.c \
+		./tests/ft_libc/ft_bzero_tests.c \
+		./tests/ft_libc/ft_memcpy_tests.c \
+		$(FT_LIBC_FILES)
 
-run_g_stdlib_tests: compile_g_stdlib_tests
+run_ft_libc_tests: compile_ft_libc_tests
 	@echo ""
-	@echo "Running g_stdlib tests..."
-	./g_stdlib_tests.out
+	@echo "Running ft_libc tests..."
+	./ft_libc_tests.out
 
 run_examples:
-	$(CC) -o examples.out ./examples.c $(G_STDLIB_FILES)
+	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
 	./examples.out
