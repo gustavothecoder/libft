@@ -3,7 +3,7 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_bzero.c \
 				./lib/ft_libc/ft_memcpy.c
 
-compile_ft_libc_tests:
+ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
 	$(CC) -o ft_libc_tests.out \
 		./tests/c_tester.c \
