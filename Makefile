@@ -15,3 +15,6 @@ ft_libc_tests:
 
 examples:
 	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
+
+clean:
+	rm examples.out ft_libc_tests.out
