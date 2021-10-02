@@ -1,4 +1,6 @@
 #include <stddef.h>
+#include <stdbool.h>
+#include <stdint.h>
 
 void *ft_memset(void *dest, int ch, size_t count);
 void ft_bzero(void *dest, size_t count);

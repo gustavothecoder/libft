@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "tests.h"
 
 static void when_trying_to_copy_elements_from_char_array();

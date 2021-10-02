@@ -1,5 +1,5 @@
-#include "../lib/ft_libc/ft_libc.h"
 #include "ft_libc/tests.h"
+#include "../lib/ft_libc/ft_libc.h"
 
 int main() {
     run_ft_memset_tests();

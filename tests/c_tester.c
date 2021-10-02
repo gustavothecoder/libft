@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "c_tester.h"
 
 static void print_result(bool assertion_result, char caller[], int line);
