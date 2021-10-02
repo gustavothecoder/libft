@@ -1,5 +1,3 @@
-#include <stdbool.h>
-#include <stdint.h>
 #include "ft_libc.h"
 
 bool is_valid(void *dest, size_t count);
