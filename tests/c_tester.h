@@ -1,5 +1,8 @@
-#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <stddef.h>
+#include <stdbool.h>
+#include <stdint.h>
 
 #define assert(assertion_result) call_print_result(assertion_result, __FILE__, __LINE__)
 #define assert_array(arr1, arr2, size) compare_arrays(arr1, arr2, size, __FILE__, __LINE__)

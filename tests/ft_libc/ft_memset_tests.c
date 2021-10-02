@@ -1,4 +1,3 @@
-#include <stdint.h>
 #include "tests.h"
 
 static void when_all_parameters_are_right();

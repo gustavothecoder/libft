@@ -1,5 +1,4 @@
 #include "tests.h"
-#include <stdint.h>
 
 static void when_all_parameters_are_right();
 static void when_a_null_pointer_are_sent();
