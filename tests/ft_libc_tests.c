@@ -5,6 +5,7 @@ int main() {
     run_ft_memset_tests();
     run_ft_bzero_tests();
     run_ft_memcpy_tests();
+    run_ft_memccpy_tests();
 
     return 0;
 }
