@@ -6,3 +6,4 @@ void *ft_memset(void *dest, int ch, size_t count);
 void ft_bzero(void *dest, size_t count);
 void *ft_memcpy(void *restrict dest, const void *restrict src, size_t count);
 void *ft_memccpy(void *restrict dest, const void *restrict src, int c, size_t count);
+void *ft_memmove(void *dest, const void *src, size_t count);
