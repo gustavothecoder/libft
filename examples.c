@@ -5,12 +5,14 @@ static void run_ft_memset_example();
 static void run_ft_bzero_example();
 static void run_ft_memcpy_example();
 static void run_ft_memccpy_example();
+static void run_ft_memmove_example();
 
 int main() {
     run_ft_memset_example();
     run_ft_bzero_example();
     run_ft_memcpy_example();
     run_ft_memccpy_example();
+    run_ft_memmove_example();
     return 0;
 }
 
@@ -49,5 +51,15 @@ static void run_ft_memccpy_example() {
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_memccpy(dest, src, ' ', sizeof src);
     printf("Function call: ft_memccpy(dest, src, ' ', sizeof src);\n");
+    printf("After: src = %s, dest = %s\n", src, dest);
+}
+
+static void run_ft_memmove_example() {
+    printf("--- ft_memmove ---\n");
+    char src[] = "hello world";
+    char dest[12] = {'\0'};
+    printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
+    ft_memmove(dest, src, sizeof(src));
+    printf("Function call: ft_memmove(dest, src, sizeof(src));\n");
     printf("After: src = %s, dest = %s\n", src, dest);
 }
