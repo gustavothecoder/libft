@@ -7,6 +7,6 @@ int main() {
     run_ft_memcpy_tests();
     run_ft_memccpy_tests();
     run_ft_memmove_tests();
-
+    run_ft_memcmp_tests();
     return 0;
 }

@@ -6,6 +6,7 @@ static void run_ft_bzero_example();
 static void run_ft_memcpy_example();
 static void run_ft_memccpy_example();
 static void run_ft_memmove_example();
+static void run_ft_memcmp_example();
 
 int main() {
     run_ft_memset_example();
@@ -13,6 +14,7 @@ int main() {
     run_ft_memcpy_example();
     run_ft_memccpy_example();
     run_ft_memmove_example();
+    run_ft_memcmp_example();
     return 0;
 }
 
@@ -62,4 +64,14 @@ static void run_ft_memmove_example() {
     ft_memmove(dest, src, sizeof(src));
     printf("Function call: ft_memmove(dest, src, sizeof(src));\n");
     printf("After: src = %s, dest = %s\n", src, dest);
+}
+
+static void run_ft_memcmp_example() {
+    printf("--- ft_memcmp ---\n");
+    char lhs[] = "hello world";
+    char rhs[] = "hello world!";
+    printf("Parameters: lhs = %s, rhs = %s\n", lhs, rhs);
+    int result = ft_memcmp(lhs, rhs, sizeof(lhs));
+    printf("Function call: ft_memcmp(lhs, rhs, sizeof(lhs));\n");
+    printf("Result: %i\n", result);
 }
