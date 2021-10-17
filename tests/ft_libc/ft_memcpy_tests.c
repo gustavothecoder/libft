@@ -26,4 +26,6 @@ static void when_trying_to_copy_elements_from_int_array() {
 
     assert_array(p, arr, sz);
     assert(result == p);
+
+    free(p);
 }
