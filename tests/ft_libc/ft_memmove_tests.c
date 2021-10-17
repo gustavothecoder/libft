@@ -27,4 +27,6 @@ static void when_a_int_array_is_sent() {
 
     assert_array(dest, src, sz);
     assert(result == dest);
+
+    free(dest);
 }
