@@ -4,7 +4,8 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_memcpy.c \
 				./lib/ft_libc/ft_memccpy.c \
 				./lib/ft_libc/ft_memmove.c \
-				./lib/ft_libc/ft_memcmp.c
+				./lib/ft_libc/ft_memcmp.c \
+				./lib/ft_libc/ft_memchr.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -17,6 +18,7 @@ ft_libc_tests:
 		./tests/ft_libc/ft_memccpy_tests.c \
 		./tests/ft_libc/ft_memmove_tests.c \
 		./tests/ft_libc/ft_memcmp_tests.c \
+		./tests/ft_libc/ft_memchr_tests.c \
 		$(FT_LIBC_FILES)
 
 examples:
