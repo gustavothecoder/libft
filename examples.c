@@ -8,6 +8,7 @@ static void run_ft_memccpy_example();
 static void run_ft_memmove_example();
 static void run_ft_memcmp_example();
 static void run_ft_memchr_example();
+static void run_ft_strlen_example();
 
 int main() {
     run_ft_memset_example();
@@ -17,6 +18,7 @@ int main() {
     run_ft_memmove_example();
     run_ft_memcmp_example();
     run_ft_memchr_example();
+    run_ft_strlen_example();
     return 0;
 }
 
@@ -85,4 +87,13 @@ static void run_ft_memchr_example() {
     void *result = ft_memchr(str, 'w', 11);
     printf("Function call: ft_memchr(str, 'w', 11);\n");
     printf("Result: %s\n", result);
+}
+
+static void run_ft_strlen_example() {
+    printf("--- ft_strlen ---\n");
+    char str[] = "hello world";
+    printf("Parameters: str = %s\n", str);
+    size_t ans = ft_strlen(str);
+    printf("Function call: ft_strlen(str);\n");
+    printf("Result: %i\n", ans);
 }

@@ -9,3 +9,4 @@ void *ft_memccpy(void *restrict dest, const void *restrict src, int c, size_t co
 void *ft_memmove(void *dest, const void *src, size_t count);
 int ft_memcmp(const void *lhs, const void *rhs, size_t count);
 void *ft_memchr(const void *ptr, int ch, size_t count);
+size_t ft_strlen(const char *str);
