@@ -23,77 +23,100 @@ int main() {
 }
 
 static void run_ft_memset_example() {
-    printf("--- ft_memset ---\n");
+    printf("--- ft_memset ---------------------------------------------------------\n");
+    printf("Copies the value ch (after conversion to unsigned char as if by (unsigned char)ch)\n");
+    printf("into each of the first count characters of the object pointed to by dest.\n\n");
     char str[] = "hello world";
     printf("Before: %s\n", str);
     ft_memset(str, 'a', 3);
     printf("Function call: ft_memset(str, 'a', 3);\n");
-    printf("After: %s\n", str);
+    printf("After: %s\n\n", str);
 }
 
 static void run_ft_bzero_example() {
-    printf("--- ft_bzero ---\n");
+    printf("--- ft_bzero ----------------------------------------------------------\n");
+    printf("Erases the data in the n bytes of the memory starting at the location pointed\n");
+    printf("to by str, by writing zeros (bytes containing '\\0') to that area.\n\n");
     char str[] = "hello world";
     printf("Before: %s\n", str);
     ft_bzero(str, sizeof(str));
     printf("Function call: ft_bzero(str, sizeof(str));\n");
-    printf("After: %s (was erased)\n", str);
+    printf("After: %s (was erased)\n\n", str);
 }
 
 static void run_ft_memcpy_example() {
-    printf("--- ft_memcpy ---\n");
+    printf("--- ft_memcpy ---------------------------------------------------------\n");
+    printf("Copies count characters from the object pointed to by src to the object\n");
+    printf("pointed to by dest. Both objects are interpreted as arrays of unsigned char.\n\n");
     char src[] = "hello world";
     char dest[12];
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_memcpy(dest, src, sizeof(src));
     printf("Function call: ft_memcpy(dest, src, sizeof(src));\n");
-    printf("After: src = %s, dest = %s\n", src, dest);
+    printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
 static void run_ft_memccpy_example() {
-    printf("--- ft_memccpy ---\n");
+    printf("--- ft_memccpy --------------------------------------------------------\n");
+    printf("Copies characters from the object pointed to by src to the object pointed\n");
+    printf("to by dest, stopping after any of the next two conditions are satisfied:\n");
+    printf("    - count characters are copied\n");
+    printf("    - the character (unsigned char)c is found (and copied)\n\n");
     char src[] = "hello world";
     char dest[12] = {'\0'};
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_memccpy(dest, src, ' ', sizeof src);
     printf("Function call: ft_memccpy(dest, src, ' ', sizeof src);\n");
-    printf("After: src = %s, dest = %s\n", src, dest);
+    printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
 static void run_ft_memmove_example() {
-    printf("--- ft_memmove ---\n");
+    printf("--- ft_memmove --------------------------------------------------------\n");
+    printf("Copies count characters from the object pointed to by src to the object\n");
+    printf("pointed to by dest. Both objects are interpreted as arrays of unsigned char.\n");
+    printf("The objects may overlap: copying takes place as if the characters were\n");
+    printf("copied to a temporary character array and then the characters were copied\n");
+    printf("from the array to dest.\n\n");
     char src[] = "hello world";
     char dest[12] = {'\0'};
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_memmove(dest, src, sizeof(src));
     printf("Function call: ft_memmove(dest, src, sizeof(src));\n");
-    printf("After: src = %s, dest = %s\n", src, dest);
+    printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
 static void run_ft_memcmp_example() {
-    printf("--- ft_memcmp ---\n");
+    printf("--- ft_memcmp ---------------------------------------------------------\n");
+    printf("Compares the first count characters of the objects pointed to by lhs and rhs.\n");
+    printf("The comparison is done lexicographically.\n\n");
     char lhs[] = "hello world";
     char rhs[] = "hello world!";
     printf("Parameters: lhs = %s, rhs = %s\n", lhs, rhs);
     int result = ft_memcmp(lhs, rhs, sizeof(lhs));
     printf("Function call: ft_memcmp(lhs, rhs, sizeof(lhs));\n");
-    printf("Result: %i\n", result);
+    printf("Result: %i\n\n", result);
 }
 
 static void run_ft_memchr_example() {
-    printf("--- ft_memchr ---\n");
+    printf("--- ft_memchr ---------------------------------------------------------\n");
+    printf("Finds the first occurrence of ch (after conversion to unsigned char as\n");
+    printf("if by (unsigned char)ch) in the initial count characters\n");
+    printf("(each interpreted as unsigned char) of the object pointed to by ptr.\n\n");
     char str[] = "hello world";
     printf("Parameters: str = %s\n", str);
     void *result = ft_memchr(str, 'w', 11);
     printf("Function call: ft_memchr(str, 'w', 11);\n");
-    printf("Result: %s\n", result);
+    printf("Result: %s\n\n", result);
 }
 
 static void run_ft_strlen_example() {
-    printf("--- ft_strlen ---\n");
+    printf("--- ft_strlen ---------------------------------------------------------\n");
+    printf("Returns the length of the given null-terminated byte string, that is,\n");
+    printf("the number of characters in a character array whose first element is\n");
+    printf("pointed to by str up to and not including the first null character.\n\n");
     char str[] = "hello world";
     printf("Parameters: str = %s\n", str);
     size_t ans = ft_strlen(str);
     printf("Function call: ft_strlen(str);\n");
-    printf("Result: %i\n", ans);
+    printf("Result: %i\n\n", ans);
 }
