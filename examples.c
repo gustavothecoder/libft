@@ -9,6 +9,7 @@ static void run_ft_memmove_example();
 static void run_ft_memcmp_example();
 static void run_ft_memchr_example();
 static void run_ft_strlen_example();
+static void run_ft_strdup_example();
 
 int main() {
     run_ft_memset_example();
@@ -19,6 +20,7 @@ int main() {
     run_ft_memcmp_example();
     run_ft_memchr_example();
     run_ft_strlen_example();
+    run_ft_strdup_example();
     return 0;
 }
 
@@ -119,4 +121,16 @@ static void run_ft_strlen_example() {
     size_t ans = ft_strlen(str);
     printf("Function call: ft_strlen(str);\n");
     printf("Result: %i\n\n", ans);
+}
+
+static void run_ft_strdup_example() {
+    printf("--- ft_strdup ---------------------------------------------------------\n");
+    printf("Returns a pointer to a null-terminated byte string, which is a duplicate\n");
+    printf("of the string pointed to by str1.\n\n");
+    char str1[] = "hello world";
+    printf("Parameters: str1 = %s\n", str1);
+    char *str2 = ft_strdup(str1);
+    printf("Function call: ft_strdup(str1);\n");
+    printf("Return: %s\n\n", str2);
+    free(str2);
 }
