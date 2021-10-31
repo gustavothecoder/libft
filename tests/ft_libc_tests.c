@@ -10,5 +10,6 @@ int main() {
     run_ft_memcmp_tests();
     run_ft_memchr_tests();
     run_ft_strlen_tests();
+    run_ft_strdup_tests();
     return 0;
 }

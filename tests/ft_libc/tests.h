@@ -9,3 +9,4 @@ void run_ft_memmove_tests();
 void run_ft_memcmp_tests();
 void run_ft_memchr_tests();
 void run_ft_strlen_tests();
+void run_ft_strdup_tests();

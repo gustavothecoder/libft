@@ -3,23 +3,25 @@
 static void when_an_empty_string_is_sent();
 static void when_a_common_string_is_sent();
 
-void run_ft_strlen_tests() {
+void run_ft_strdup_tests() {
     when_an_empty_string_is_sent();
     when_a_common_string_is_sent();
 }
 
 static void when_an_empty_string_is_sent() {
-    const char str[] = "";
+    const char *str1 = "";
 
-    size_t ans = ft_strlen(str);
+    char *str2 = ft_strdup(str1);
 
-    assert(ans == 0);
+    assert(str2 == NULL);
+    free(str2);
 }
 
 static void when_a_common_string_is_sent() {
-    const char str[] = "How many characters does this string contain?";
+    const char *str1 = "Duplicate me!";
 
-    size_t ans = ft_strlen(str);
+    char *str2 = ft_strdup(str1);
 
-    assert(ans == 45);
+    assert_array(str2, str1, ft_strlen(str1));
+    free(str2);
 }
