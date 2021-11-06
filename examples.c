@@ -10,6 +10,7 @@ static void run_ft_memcmp_example();
 static void run_ft_memchr_example();
 static void run_ft_strlen_example();
 static void run_ft_strdup_example();
+static void run_ft_strcpy_example();
 
 int main() {
     run_ft_memset_example();
@@ -21,6 +22,7 @@ int main() {
     run_ft_memchr_example();
     run_ft_strlen_example();
     run_ft_strdup_example();
+    run_ft_strcpy_example();
     return 0;
 }
 
@@ -133,4 +135,16 @@ static void run_ft_strdup_example() {
     printf("Function call: ft_strdup(str1);\n");
     printf("Return: %s\n\n", str2);
     free(str2);
+}
+
+static void run_ft_strcpy_example() {
+    printf("--- ft_strcpy ---------------------------------------------------------\n");
+    printf("Copies the null-terminated byte string pointed to by src, including the\n");
+    printf("null terminator, to the character array whose first element is pointed to by dest.\n\n");
+    char src[] = "hello world";
+    char dest[12] = {'\0'};
+    printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
+    ft_strcpy(dest, src);
+    printf("Function call: ft_strcpy(dest, src);\n");
+    printf("After: dest = %s\n\n", dest);
 }
