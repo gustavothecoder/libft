@@ -11,5 +11,6 @@ int main() {
     run_ft_memchr_tests();
     run_ft_strlen_tests();
     run_ft_strdup_tests();
+    run_ft_strcpy_tests();
     return 0;
 }
