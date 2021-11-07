@@ -11,6 +11,7 @@ static void run_ft_memchr_example();
 static void run_ft_strlen_example();
 static void run_ft_strdup_example();
 static void run_ft_strcpy_example();
+static void run_ft_strncpy_example();
 
 int main() {
     run_ft_memset_example();
@@ -23,6 +24,7 @@ int main() {
     run_ft_strlen_example();
     run_ft_strdup_example();
     run_ft_strcpy_example();
+    run_ft_strncpy_example();
     return 0;
 }
 
@@ -146,5 +148,18 @@ static void run_ft_strcpy_example() {
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_strcpy(dest, src);
     printf("Function call: ft_strcpy(dest, src);\n");
+    printf("After: dest = %s\n\n", dest);
+}
+
+static void run_ft_strncpy_example() {
+    printf("--- ft_strncpy --------------------------------------------------------\n");
+    printf("Copies at most count characters of the character array pointed to by src\n");
+    printf("(including the terminating null character, but not any of the characters\n");
+    printf("that follow the null character) to character array pointed to by dest.\n\n");
+    char src[] = "hello world";
+    char dest[12] = {'\0'};
+    printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
+    ft_strncpy(dest, src, 12);
+    printf("Function call: ft_strncpy(dest, src, 12);\n");
     printf("After: dest = %s\n\n", dest);
 }
