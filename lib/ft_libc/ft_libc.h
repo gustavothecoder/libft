@@ -13,3 +13,4 @@ void *ft_memchr(const void *ptr, int ch, size_t count);
 size_t ft_strlen(const char *str);
 char *ft_strdup(const char *str1);
 char *ft_strcpy(char *dest, const char *src);
+char *ft_strncpy(char *dest, const char *src, size_t count);
