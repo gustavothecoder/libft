@@ -12,3 +12,4 @@ void run_ft_strlen_tests();
 void run_ft_strdup_tests();
 void run_ft_strcpy_tests();
 void run_ft_strncpy_tests();
+void run_ft_strcat_tests();
