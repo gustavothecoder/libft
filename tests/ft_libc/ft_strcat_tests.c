@@ -8,6 +8,6 @@ void run_ft_strcat_tests() {
     ft_strcat(str, " ...");
     char *result = ft_strcat(str, " Goodbye World!");
 
-    assert_array(str, "Hello World! ... Goodbye World!", 32);
+    assert_array(str, "Hello World! ... Goodbye World!\0", 32);
     assert(result == str);
 }
