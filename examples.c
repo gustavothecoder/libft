@@ -12,6 +12,7 @@ static void run_ft_strlen_example();
 static void run_ft_strdup_example();
 static void run_ft_strcpy_example();
 static void run_ft_strncpy_example();
+static void run_ft_strcat_example();
 
 int main() {
     run_ft_memset_example();
@@ -25,6 +26,7 @@ int main() {
     run_ft_strdup_example();
     run_ft_strcpy_example();
     run_ft_strncpy_example();
+    run_ft_strcat_example();
     return 0;
 }
 
@@ -161,5 +163,19 @@ static void run_ft_strncpy_example() {
     printf("Before: src = %s, dest = %s (nothing)\n", src, dest);
     ft_strncpy(dest, src, 12);
     printf("Function call: ft_strncpy(dest, src, 12);\n");
+    printf("After: dest = %s\n\n", dest);
+}
+
+static void run_ft_strcat_example() {
+    printf("--- ft_strcat ---------------------------------------------------------\n");
+    printf("Appends a copy of the null-terminated byte string pointed to by src to\n");
+    printf("the end of the null-terminated byte string pointed to by dest.\n");
+    printf("The character src[0] replaces the null terminator at the end of dest.\n");
+    printf("The resulting byte string is null-terminated.\n\n");
+    char dest[12] = "hello ";
+    char src[] = "world";
+    printf("Before: src = %s, dest = %s\n", src, dest);
+    ft_strcat(dest, src);
+    printf("Function call: ft_strcat(dest, src);\n");
     printf("After: dest = %s\n\n", dest);
 }
