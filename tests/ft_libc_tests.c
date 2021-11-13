@@ -13,5 +13,6 @@ int main() {
     run_ft_strdup_tests();
     run_ft_strcpy_tests();
     run_ft_strncpy_tests();
+    run_ft_strcat_tests();
     return 0;
 }
