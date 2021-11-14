@@ -13,6 +13,7 @@ static void run_ft_strdup_example();
 static void run_ft_strcpy_example();
 static void run_ft_strncpy_example();
 static void run_ft_strcat_example();
+static void run_ft_strncat_example();
 
 int main() {
     run_ft_memset_example();
@@ -27,6 +28,7 @@ int main() {
     run_ft_strcpy_example();
     run_ft_strncpy_example();
     run_ft_strcat_example();
+    run_ft_strncat_example();
     return 0;
 }
 
@@ -177,5 +179,21 @@ static void run_ft_strcat_example() {
     printf("Before: src = %s, dest = %s\n", src, dest);
     ft_strcat(dest, src);
     printf("Function call: ft_strcat(dest, src);\n");
+    printf("After: dest = %s\n\n", dest);
+}
+
+static void run_ft_strncat_example() {
+    printf("--- ft_strncat --------------------------------------------------------\n");
+    printf("Appends at most count characters from the character array pointed to by\n");
+    printf("src, stopping if the null character is found, to the end of the\n");
+    printf("null-terminated byte string pointed to by dest. The character src[0]\n");
+    printf("replaces the null terminator at the end of dest. The terminating null\n");
+    printf("character is always appended in the end (so the maximum number of bytes\n");
+    printf("the function may write is count+1).\n\n");
+    char dest[12] = "hello ";
+    char src[] = "world";
+    printf("Before: src = %s, dest = %s\n", src, dest);
+    ft_strncat(dest, src, 3);
+    printf("Function call: ft_strncat(dest, src, 3);\n");
     printf("After: dest = %s\n\n", dest);
 }
