@@ -14,6 +14,7 @@ static void run_ft_strcpy_example();
 static void run_ft_strncpy_example();
 static void run_ft_strcat_example();
 static void run_ft_strncat_example();
+static void run_ft_strlcat_example();
 
 int main() {
     run_ft_memset_example();
@@ -29,6 +30,7 @@ int main() {
     run_ft_strncpy_example();
     run_ft_strcat_example();
     run_ft_strncat_example();
+    run_ft_strlcat_example();
     return 0;
 }
 
@@ -195,5 +197,18 @@ static void run_ft_strncat_example() {
     printf("Before: src = %s, dest = %s\n", src, dest);
     ft_strncat(dest, src, 3);
     printf("Function call: ft_strncat(dest, src, 3);\n");
+    printf("After: dest = %s\n\n", dest);
+}
+
+static void run_ft_strlcat_example() {
+    printf("--- ft_strlcat --------------------------------------------------------\n");
+    printf("The strlcat() function appends the NUL-terminated string src to the end\n");
+    printf("of dest. It will append at most size - strlen(dst) - 1 bytes,\n");
+    printf("NUL-terminating the result.\n\n");
+    char dest[12] = "hello ";
+    char src[] = "world";
+    printf("Before: src = %s, dest = %s\n", src, dest);
+    ft_strlcat(dest, src, 12);
+    printf("Function call: ft_strlcat(dest, src, 12);\n");
     printf("After: dest = %s\n\n", dest);
 }
