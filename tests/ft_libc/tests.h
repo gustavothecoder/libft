@@ -15,3 +15,4 @@ void run_ft_strncpy_tests();
 void run_ft_strcat_tests();
 void run_ft_strncat_tests();
 void run_ft_strlcat_tests();
+void run_ft_strchr_tests();
