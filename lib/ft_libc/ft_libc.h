@@ -18,3 +18,4 @@ char *ft_strcat(char *dest, const char *src);
 char *ft_strncat(char *dest, const char *src, size_t count);
 size_t ft_strlcat(char *dest, const char *src, size_t size);
 char *ft_strchr(const char *str, int ch);
+char *ft_strrchr(const char *str, int ch);
