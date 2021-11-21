@@ -16,6 +16,7 @@ static void run_ft_strcat_example();
 static void run_ft_strncat_example();
 static void run_ft_strlcat_example();
 static void run_ft_strchr_example();
+static void run_ft_strrchr_example();
 
 int main() {
     run_ft_memset_example();
@@ -33,6 +34,7 @@ int main() {
     run_ft_strncat_example();
     run_ft_strlcat_example();
     run_ft_strchr_example();
+    run_ft_strrchr_example();
     return 0;
 }
 
@@ -227,5 +229,20 @@ static void run_ft_strchr_example() {
     char *result = ft_strchr(str, ch);
     printf("Before: str = %s, ch = %c\n", str, ch);
     printf("Function call: ft_strchr(str, ch);\n");
+    printf("After: result = %c (%p)\n\n", *result, result);
+}
+
+static void run_ft_strrchr_example() {
+    printf("--- ft_strrchr --------------------------------------------------------\n");
+    printf("Finds the last occurrence of ch (after conversion to char as if by\n");
+    printf("(char)ch) in the null-terminated byte string pointed to by str (each\n");
+    printf("character interpreted as unsigned char). The terminating null character\n");
+    printf("is considered to be a part of the string and can be found if searching\n");
+    printf("for '\\0'.\n\n");
+    const char *str = "hello world";
+    char ch = 'l';
+    char *result = ft_strrchr(str, ch);
+    printf("Before: str = %s, ch = %c\n", str, ch);
+    printf("Function call: ft_strrchr(str, ch);\n");
     printf("After: result = %c (%p)\n\n", *result, result);
 }
