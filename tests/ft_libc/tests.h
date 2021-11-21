@@ -16,3 +16,4 @@ void run_ft_strcat_tests();
 void run_ft_strncat_tests();
 void run_ft_strlcat_tests();
 void run_ft_strchr_tests();
+void run_ft_strrchr_tests();

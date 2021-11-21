@@ -13,7 +13,8 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_strcat.c \
 				./lib/ft_libc/ft_strncat.c \
 				./lib/ft_libc/ft_strlcat.c \
-				./lib/ft_libc/ft_strchr.c
+				./lib/ft_libc/ft_strchr.c \
+				./lib/ft_libc/ft_strrchr.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -35,6 +36,7 @@ ft_libc_tests:
 		./tests/ft_libc/ft_strncat_tests.c \
 		./tests/ft_libc/ft_strlcat_tests.c \
 		./tests/ft_libc/ft_strchr_tests.c \
+		./tests/ft_libc/ft_strrchr_tests.c \
 		$(FT_LIBC_FILES)
 
 examples:
