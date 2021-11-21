@@ -16,5 +16,6 @@ int main() {
     run_ft_strcat_tests();
     run_ft_strncat_tests();
     run_ft_strlcat_tests();
+    run_ft_strchr_tests();
     return 0;
 }
