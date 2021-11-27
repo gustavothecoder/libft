@@ -17,6 +17,7 @@ static void run_ft_strncat_example();
 static void run_ft_strlcat_example();
 static void run_ft_strchr_example();
 static void run_ft_strrchr_example();
+static void run_ft_strstr_example();
 
 int main() {
     run_ft_memset_example();
@@ -35,6 +36,7 @@ int main() {
     run_ft_strlcat_example();
     run_ft_strchr_example();
     run_ft_strrchr_example();
+    run_ft_strstr_example();
     return 0;
 }
 
@@ -244,5 +246,16 @@ static void run_ft_strrchr_example() {
     char *result = ft_strrchr(str, ch);
     printf("Before: str = %s, ch = %c\n", str, ch);
     printf("Function call: ft_strrchr(str, ch);\n");
+    printf("After: result = %c (%p)\n\n", *result, result);
+}
+
+static void run_ft_strstr_example() {
+    printf("--- ft_strstr ---------------------------------------------------------\n");
+    printf("Finds the first occurrence of the null-terminated byte string pointed to\n");
+    printf("by substr in the null-terminated byte string pointed to by str.\n\n");
+    char *str = "one two three";
+    char *result = ft_strstr(str, "two");
+    printf("Variables: str = %s\n", str);
+    printf("Function call: ft_strstr(str, \"two\");\n");
     printf("After: result = %c (%p)\n\n", *result, result);
 }
