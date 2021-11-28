@@ -19,5 +19,6 @@ int main() {
     run_ft_strchr_tests();
     run_ft_strrchr_tests();
     run_ft_strstr_tests();
+    print_report();
     return 0;
 }
