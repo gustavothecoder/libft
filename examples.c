@@ -18,6 +18,7 @@ static void run_ft_strlcat_example();
 static void run_ft_strchr_example();
 static void run_ft_strrchr_example();
 static void run_ft_strstr_example();
+static void run_ft_strnstr_example();
 
 int main() {
     run_ft_memset_example();
@@ -37,6 +38,7 @@ int main() {
     run_ft_strchr_example();
     run_ft_strrchr_example();
     run_ft_strstr_example();
+    run_ft_strnstr_example();
     return 0;
 }
 
@@ -257,5 +259,17 @@ static void run_ft_strstr_example() {
     char *result = ft_strstr(str, "two");
     printf("Variables: str = %s\n", str);
     printf("Function call: ft_strstr(str, \"two\");\n");
+    printf("After: result = %c (%p)\n\n", *result, result);
+}
+
+static void run_ft_strnstr_example() {
+    printf("--- ft_strnstr --------------------------------------------------------\n");
+    printf("The strnstr() function locates the first occurrence of the null-termi-nated\n");
+    printf("string substr in the string str, where not more than count characters are\n");
+    printf("searched.\n\n");
+    char *str = "one two three";
+    char *result = ft_strnstr(str, "two", 8);
+    printf("Variables: str = %s\n", str);
+    printf("Function call: ft_strnstr(str, \"two\", 8);\n");
     printf("After: result = %c (%p)\n\n", *result, result);
 }
