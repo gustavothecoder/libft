@@ -1,9 +1,6 @@
 #include "ft_libc.h"
 
 char *ft_strcat(char *dest, const char *src) {
-    size_t dest_sz = ft_strlen(dest);
-    size_t i = dest_sz;
-    for (i; *src != '\0'; i++, src++) dest[i] = *src;
-    dest[++i] = '\0';
-    return dest;
+    size_t total_src_size = ft_strlen(src) + 1;
+    return ft_strncat(dest, src, total_src_size);
 }
