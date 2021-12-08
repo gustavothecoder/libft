@@ -21,7 +21,7 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
-	$(CC) -o ft_libc_tests.out \
+	$(CC) -o tests.out \
 		./tests/c_tester.c \
 		./tests/ft_libc_tests.c \
 		./tests/ft_libc/ft_memset_tests.c \
