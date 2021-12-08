@@ -19,6 +19,7 @@ static void run_ft_strchr_example();
 static void run_ft_strrchr_example();
 static void run_ft_strstr_example();
 static void run_ft_strnstr_example();
+static void run_ft_strcmp_example();
 
 int main() {
     run_ft_memset_example();
@@ -39,6 +40,7 @@ int main() {
     run_ft_strrchr_example();
     run_ft_strstr_example();
     run_ft_strnstr_example();
+    run_ft_strcmp_example();
     return 0;
 }
 
@@ -272,4 +274,15 @@ static void run_ft_strnstr_example() {
     printf("Variables: str = %s\n", str);
     printf("Function call: ft_strnstr(str, \"two\", 8);\n");
     printf("After: result = %c (%p)\n\n", *result, result);
+}
+
+static void run_ft_strcmp_example() {
+    printf("--- ft_strcmp ---------------------------------------------------------\n");
+    printf("Compares two null-terminated byte strings lexicographically.\n\n");
+    char *lhs = "Hello World!";
+    char *rhs = "Hello World!";
+    int result = ft_strcmp(lhs, rhs);
+    printf("Variables: lhs = %s, rhs = %s\n", lhs, rhs);
+    printf("Function call: ft_strcmp(lhs, rhs);\n");
+    printf("After: result = %d\n\n", result);
 }
