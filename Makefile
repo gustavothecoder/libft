@@ -45,6 +45,8 @@ ft_libc_tests:
 		./tests/ft_libc/ft_strcmp_tests.c \
 		$(FT_LIBC_FILES)
 
+tests: ft_libc_tests
+
 examples:
 	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
 
