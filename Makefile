@@ -21,7 +21,7 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
-	$(CC) -o ft_libc_tests.out \
+	$(CC) -o tests.out \
 		./tests/c_tester.c \
 		./tests/ft_libc_tests.c \
 		./tests/ft_libc/ft_memset_tests.c \
@@ -44,6 +44,8 @@ ft_libc_tests:
 		./tests/ft_libc/ft_strnstr_tests.c \
 		./tests/ft_libc/ft_strcmp_tests.c \
 		$(FT_LIBC_FILES)
+
+tests: ft_libc_tests
 
 examples:
 	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
