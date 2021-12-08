@@ -19,3 +19,4 @@ void run_ft_strchr_tests();
 void run_ft_strrchr_tests();
 void run_ft_strstr_tests();
 void run_ft_strnstr_tests();
+void run_ft_strcmp_tests();

@@ -20,6 +20,7 @@ int main() {
     run_ft_strrchr_tests();
     run_ft_strstr_tests();
     run_ft_strnstr_tests();
+    run_ft_strcmp_tests();
     print_report();
     return 0;
 }
