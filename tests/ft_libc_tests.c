@@ -21,6 +21,7 @@ int main() {
     run_ft_strstr_tests();
     run_ft_strnstr_tests();
     run_ft_strcmp_tests();
+    run_ft_strncmp_tests();
     print_report();
     return 0;
 }
