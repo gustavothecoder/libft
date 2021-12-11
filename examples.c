@@ -20,6 +20,7 @@ static void run_ft_strrchr_example();
 static void run_ft_strstr_example();
 static void run_ft_strnstr_example();
 static void run_ft_strcmp_example();
+static void run_ft_strncmp_example();
 
 int main() {
     run_ft_memset_example();
@@ -41,6 +42,7 @@ int main() {
     run_ft_strstr_example();
     run_ft_strnstr_example();
     run_ft_strcmp_example();
+    run_ft_strncmp_example();
     return 0;
 }
 
@@ -284,5 +286,18 @@ static void run_ft_strcmp_example() {
     int result = ft_strcmp(lhs, rhs);
     printf("Variables: lhs = %s, rhs = %s\n", lhs, rhs);
     printf("Function call: ft_strcmp(lhs, rhs);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_strncmp_example() {
+    printf("--- ft_strncmp --------------------------------------------------------\n");
+    printf("Compares at most count characters of two possibly null-terminated arrays.\n");
+    printf("The comparison is done lexicographically. Characters following the null\n");
+    printf("character are not compared.\n\n");
+    char *lhs = "Hello World!";
+    char *rhs = "Hello";
+    int result = ft_strncmp(lhs, rhs, 5);
+    printf("Variables: lhs = %s, rhs = %s\n", lhs, rhs);
+    printf("Function call: ft_strncmp(lhs, rhs, 5);\n");
     printf("After: result = %d\n\n", result);
 }
