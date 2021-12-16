@@ -23,3 +23,4 @@ char *ft_strstr(const char *str, const char *substr);
 char *ft_strnstr(const char *str, const char *substr, size_t count);
 int ft_strcmp(const char *lhs, const char *rhs);
 int ft_strncmp(const char *lhs, const char *rhs, size_t count);
+int ft_atoi(const char *str);
