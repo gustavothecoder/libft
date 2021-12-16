@@ -21,6 +21,7 @@ static void run_ft_strstr_example();
 static void run_ft_strnstr_example();
 static void run_ft_strcmp_example();
 static void run_ft_strncmp_example();
+static void run_ft_atoi_example();
 
 int main() {
     run_ft_memset_example();
@@ -43,6 +44,7 @@ int main() {
     run_ft_strnstr_example();
     run_ft_strcmp_example();
     run_ft_strncmp_example();
+    run_ft_atoi_example();
     return 0;
 }
 
@@ -299,5 +301,18 @@ static void run_ft_strncmp_example() {
     int result = ft_strncmp(lhs, rhs, 5);
     printf("Variables: lhs = %s, rhs = %s\n", lhs, rhs);
     printf("Function call: ft_strncmp(lhs, rhs, 5);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_atoi_example() {
+    printf("--- ft_atoi -----------------------------------------------------------\n");
+    printf("Interprets an integer value in a byte string pointed to by str. Discards\n");
+    printf("any whitespace characters until the first non-whitespace character is\n");
+    printf("found, then takes as many characters as possible to form a valid integer\n");
+    printf("number representation and converts them to an integer value.\n\n");
+    char *str = "\" -123junk\"";
+    int result = ft_atoi(str);
+    printf("Variables: str = %s\n", str);
+    printf("Function call: ft_atoi(str);\n");
     printf("After: result = %d\n\n", result);
 }
