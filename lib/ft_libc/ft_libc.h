@@ -25,3 +25,4 @@ int ft_strcmp(const char *lhs, const char *rhs);
 int ft_strncmp(const char *lhs, const char *rhs, size_t count);
 int ft_atoi(const char *str);
 int ft_isalpha(int ch);
+int ft_isdigit(int ch);
