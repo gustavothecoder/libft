@@ -19,7 +19,8 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_strnstr.c \
 				./lib/ft_libc/ft_strcmp.c \
 				./lib/ft_libc/ft_strncmp.c \
-				./lib/ft_libc/ft_atoi.c
+				./lib/ft_libc/ft_atoi.c \
+				./lib/ft_libc/ft_isalpha.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -47,6 +48,7 @@ ft_libc_tests:
 		./tests/ft_libc/ft_strcmp_tests.c \
 		./tests/ft_libc/ft_strncmp_tests.c \
 		./tests/ft_libc/ft_atoi_tests.c \
+		./tests/ft_libc/ft_isalpha_tests.c \
 		$(FT_LIBC_FILES)
 
 tests: ft_libc_tests

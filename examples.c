@@ -22,6 +22,7 @@ static void run_ft_strnstr_example();
 static void run_ft_strcmp_example();
 static void run_ft_strncmp_example();
 static void run_ft_atoi_example();
+static void run_ft_isalpha_example();
 
 int main() {
     run_ft_memset_example();
@@ -45,6 +46,7 @@ int main() {
     run_ft_strcmp_example();
     run_ft_strncmp_example();
     run_ft_atoi_example();
+    run_ft_isalpha_example();
     return 0;
 }
 
@@ -314,5 +316,17 @@ static void run_ft_atoi_example() {
     int result = ft_atoi(str);
     printf("Variables: str = %s\n", str);
     printf("Function call: ft_atoi(str);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_isalpha_example() {
+    printf("--- ft_isalpha --------------------------------------------------------\n");
+    printf("Checks if the given character is an alphabetic character, i.e. either an\n");
+    printf("uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), or a lowercase letter\n");
+    printf("(abcdefghijklmnopqrstuvwxyz).\n\n");
+    int ch = 'g';
+    int result = ft_isalpha(ch);
+    printf("Variables: ch = %d (g)\n", ch);
+    printf("Function call: ft_isalpha(ch);\n");
     printf("After: result = %d\n\n", result);
 }
