@@ -23,6 +23,7 @@ static void run_ft_strcmp_example();
 static void run_ft_strncmp_example();
 static void run_ft_atoi_example();
 static void run_ft_isalpha_example();
+static void run_ft_isdigit_example();
 
 int main() {
     run_ft_memset_example();
@@ -47,6 +48,7 @@ int main() {
     run_ft_strncmp_example();
     run_ft_atoi_example();
     run_ft_isalpha_example();
+    run_ft_isdigit_example();
     return 0;
 }
 
@@ -328,5 +330,15 @@ static void run_ft_isalpha_example() {
     int result = ft_isalpha(ch);
     printf("Variables: ch = %d (g)\n", ch);
     printf("Function call: ft_isalpha(ch);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_isdigit_example() {
+    printf("--- ft_isdigit --------------------------------------------------------\n");
+    printf("Checks if the given character is a numeric character (0123456789).\n\n");
+    int ch = 6;
+    int result = ft_isdigit(ch);
+    printf("Variables: ch = %d\n", ch);
+    printf("Function call: ft_isdigit(ch);\n");
     printf("After: result = %d\n\n", result);
 }
