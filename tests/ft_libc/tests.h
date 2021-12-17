@@ -22,3 +22,4 @@ void run_ft_strnstr_tests();
 void run_ft_strcmp_tests();
 void run_ft_strncmp_tests();
 void run_ft_atoi_tests();
+void run_ft_isalpha_tests();
