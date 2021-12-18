@@ -1,16 +1,18 @@
 #include "ft_libc.h"
 
-static int is_valid(const char c);
+static int is_valid(const char *valid_chars, const char c);
 static int to_int(const char *number);
 
 int ft_atoi(const char *str) {
     char number[11];
     int number_found = 0;
     int i = 0;
+    char valid_chars[12] = {'-'};
+    ft_strcat(valid_chars, DIGITS);
     for (; *str != '\0'; str++) {
-        if (is_valid(*str)) {
+        if (is_valid(valid_chars, *str)) {
             number_found = 1;
-            for (i; is_valid(*str); str++, i++) {
+            for (i; is_valid(valid_chars, *str); str++, i++) {
                 number[i] = *str;
             }
             number[i] = '\0';
@@ -20,8 +22,8 @@ int ft_atoi(const char *str) {
     return number_found ? to_int(number) : 0;
 }
 
-static int is_valid(const char c) {
-    char valid_chars[11] = {'-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+// to-do: use the ft_strnstr
+static int is_valid(const char *valid_chars, const char c) {
     for (int i = 0; i < 10; i++)
         if (c == valid_chars[i]) return 1;
     return 0;
