@@ -22,6 +22,7 @@ int ft_atoi(const char *str) {
     return number_found ? to_int(number) : 0;
 }
 
+// to-do: use the ft_strnstr
 static int is_valid(const char *valid_chars, const char c) {
     for (int i = 0; i < 10; i++)
         if (c == valid_chars[i]) return 1;
