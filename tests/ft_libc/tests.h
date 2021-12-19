@@ -26,3 +26,4 @@ void run_ft_isalpha_tests();
 void run_ft_isdigit_tests();
 void run_ft_isalnum_tests();
 void run_ft_isascii_tests();
+void run_ft_isprint_tests();
