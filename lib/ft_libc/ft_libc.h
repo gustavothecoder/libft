@@ -6,6 +6,7 @@
 #define DIGITS "0123456789"
 #define UPPERCASE_ALPHABET "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #define LOWERCASE_ALPHABET "abcdefghijklmnopqrstuvwxyz"
+#define PUNCTUATION_CHARS "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
 void *ft_memset(void *dest, int ch, size_t count);
 void ft_bzero(void *dest, size_t count);
@@ -32,3 +33,4 @@ int ft_isalpha(int ch);
 int ft_isdigit(int ch);
 int ft_isalnum(int ch);
 int ft_isascii(int ch);
+int ft_isprint(int ch);
