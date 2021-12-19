@@ -24,6 +24,7 @@ static void run_ft_strncmp_example();
 static void run_ft_atoi_example();
 static void run_ft_isalpha_example();
 static void run_ft_isdigit_example();
+static void run_ft_isalnum_example();
 
 int main() {
     run_ft_memset_example();
@@ -49,6 +50,7 @@ int main() {
     run_ft_atoi_example();
     run_ft_isalpha_example();
     run_ft_isdigit_example();
+    run_ft_isalnum_example();
     return 0;
 }
 
@@ -340,5 +342,16 @@ static void run_ft_isdigit_example() {
     int result = ft_isdigit(ch);
     printf("Variables: ch = %d\n", ch);
     printf("Function call: ft_isdigit(ch);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_isalnum_example() {
+    printf("--- ft_isalnum --------------------------------------------------------\n");
+    printf("Checks if the given character is an alphanumeric character as classified\n");
+    printf("by the current C locale.\n\n");
+    int ch = 'G';
+    int result = ft_isalnum(ch);
+    printf("Variables: ch = %d (G)\n", ch);
+    printf("Function call: ft_isalnum(ch);\n");
     printf("After: result = %d\n\n", result);
 }
