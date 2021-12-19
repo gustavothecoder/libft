@@ -26,6 +26,7 @@ static void run_ft_isalpha_example();
 static void run_ft_isdigit_example();
 static void run_ft_isalnum_example();
 static void run_ft_isascii_example();
+static void run_ft_isprint_example();
 
 int main() {
     run_ft_memset_example();
@@ -53,6 +54,7 @@ int main() {
     run_ft_isdigit_example();
     run_ft_isalnum_example();
     run_ft_isascii_example();
+    run_ft_isprint_example();
     return 0;
 }
 
@@ -366,5 +368,18 @@ static void run_ft_isascii_example() {
     int result = ft_isascii(ch);
     printf("Variables: ch = %d (g)\n", ch);
     printf("Function call: ft_isascii(ch);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_isprint_example() {
+    printf("--- ft_isprint --------------------------------------------------------\n");
+    printf("Checks if the given character can be printed, i.e. it is either a number\n");
+    printf("(0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase\n");
+    printf("letter (abcdefghijklmnopqrstuvwxyz), a punctuation\n");
+    printf("character(!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~), or space.\n\n");
+    int ch = 35; // 35 == #
+    int result = ft_isprint(ch);
+    printf("Variables: ch = %d (#)\n", ch);
+    printf("Function call: ft_isprint(ch);\n");
     printf("After: result = %d\n\n", result);
 }
