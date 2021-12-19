@@ -25,6 +25,7 @@ int main() {
     run_ft_atoi_tests();
     run_ft_isalpha_tests();
     run_ft_isdigit_tests();
+    run_ft_isalnum_tests();
     print_report();
     return 0;
 }
