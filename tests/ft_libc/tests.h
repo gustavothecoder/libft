@@ -25,3 +25,4 @@ void run_ft_atoi_tests();
 void run_ft_isalpha_tests();
 void run_ft_isdigit_tests();
 void run_ft_isalnum_tests();
+void run_ft_isascii_tests();
