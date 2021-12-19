@@ -25,6 +25,7 @@ static void run_ft_atoi_example();
 static void run_ft_isalpha_example();
 static void run_ft_isdigit_example();
 static void run_ft_isalnum_example();
+static void run_ft_isascii_example();
 
 int main() {
     run_ft_memset_example();
@@ -51,6 +52,7 @@ int main() {
     run_ft_isalpha_example();
     run_ft_isdigit_example();
     run_ft_isalnum_example();
+    run_ft_isascii_example();
     return 0;
 }
 
@@ -353,5 +355,16 @@ static void run_ft_isalnum_example() {
     int result = ft_isalnum(ch);
     printf("Variables: ch = %d (G)\n", ch);
     printf("Function call: ft_isalnum(ch);\n");
+    printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_isascii_example() {
+    printf("--- ft_isascii --------------------------------------------------------\n");
+    printf("Tests if a given character can be represented as a valid 7–bit US-ASCII\n");
+    printf("character.\n\n");
+    int ch = 103; // 103 == g
+    int result = ft_isascii(ch);
+    printf("Variables: ch = %d (g)\n", ch);
+    printf("Function call: ft_isascii(ch);\n");
     printf("After: result = %d\n\n", result);
 }
