@@ -10,11 +10,12 @@ void run_ft_isdigit_tests() {
     when_ch_is_not_a_number();
 }
 
-// to-do: use all digits
 static void when_ch_is_a_positive_number() {
-    int result = ft_isdigit(4);
+    for (int i = 0; i < 10; i++) {
+        int result = ft_isdigit(DIGITS[i] - '0');
 
-    assert(result == 1);
+        assert(result == 1);
+    }
 }
 
 static void when_ch_is_a_negative_number() {
