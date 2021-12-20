@@ -35,9 +35,9 @@ static void when_ch_is_a_lowercase_letter() {
 }
 
 static void when_ch_is_a_punctuation_char() {
-    // to-do: remove result declaration from the for loop
+    int result;
     for (int i = 0; i < 34; i++) {
-        int result = ft_isprint(PUNCTUATION_CHARS[i]);
+        result = ft_isprint(PUNCTUATION_CHARS[i]);
 
         assert(result == 1);
     }
