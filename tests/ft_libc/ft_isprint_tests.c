@@ -34,11 +34,12 @@ static void when_ch_is_a_lowercase_letter() {
     assert(result == 1);
 }
 
-// to-do: use all punctuation
 static void when_ch_is_a_punctuation_char() {
-    int result = ft_isprint('%');
+    for (int i = 0; i < 34; i++) {
+        int result = ft_isprint(PUNCTUATION_CHARS[i]);
 
-    assert(result == 1);
+        assert(result == 1);
+    }
 }
 
 static void when_ch_is_a_space() {
