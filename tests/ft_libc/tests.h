@@ -28,3 +28,4 @@ void run_ft_isalnum_tests();
 void run_ft_isascii_tests();
 void run_ft_isprint_tests();
 void run_ft_toupper_tests();
+void run_ft_tolower_tests();

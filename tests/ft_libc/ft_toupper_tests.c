@@ -11,6 +11,7 @@ void run_ft_toupper_tests() {
 }
 
 static void when_ch_can_be_converted_to_uppercase() {
+    // to-do: remove result declaration from the for loop
     for (int i = 0; i < 26; i ++) {
         int result = ft_toupper(LOWERCASE_ALPHABET[i]);
 

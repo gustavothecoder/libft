@@ -11,6 +11,7 @@ void run_ft_isalpha_tests() {
 }
 
 static void when_ch_is_an_alphabetic_uppercase_letter() {
+    // to-do: remove result declaration from the for loop
     for (int i = 0; i < 26; i++) {
         int result = ft_isalpha(UPPERCASE_ALPHABET[i]);
 
@@ -19,6 +20,7 @@ static void when_ch_is_an_alphabetic_uppercase_letter() {
 }
 
 static void when_ch_is_an_alphabetic_lowercase_letter() {
+    // to-do: remove result declaration from the for loop
     for (int i = 0; i < 26; i++) {
         int result = ft_isalpha(LOWERCASE_ALPHABET[i]);
 

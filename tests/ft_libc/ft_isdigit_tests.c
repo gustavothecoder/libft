@@ -11,6 +11,7 @@ void run_ft_isdigit_tests() {
 }
 
 static void when_ch_is_a_positive_number() {
+    // to-do: remove result declaration from the for loop
     for (int i = 0; i < 10; i++) {
         int result = ft_isdigit(DIGITS[i] - '0');
 
