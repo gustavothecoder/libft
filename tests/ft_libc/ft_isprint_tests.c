@@ -34,6 +34,7 @@ static void when_ch_is_a_lowercase_letter() {
     assert(result == 1);
 }
 
+// to-do: use all punctuation
 static void when_ch_is_a_punctuation_char() {
     int result = ft_isprint('%');
 

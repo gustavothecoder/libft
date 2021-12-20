@@ -27,6 +27,7 @@ static void run_ft_isdigit_example();
 static void run_ft_isalnum_example();
 static void run_ft_isascii_example();
 static void run_ft_isprint_example();
+static void run_ft_toupper_example();
 
 int main() {
     run_ft_memset_example();
@@ -55,6 +56,7 @@ int main() {
     run_ft_isalnum_example();
     run_ft_isascii_example();
     run_ft_isprint_example();
+    run_ft_toupper_example();
     return 0;
 }
 
@@ -382,4 +384,14 @@ static void run_ft_isprint_example() {
     printf("Variables: ch = %d (#)\n", ch);
     printf("Function call: ft_isprint(ch);\n");
     printf("After: result = %d\n\n", result);
+}
+
+static void run_ft_toupper_example() {
+    printf("--- ft_toupper --------------------------------------------------------\n");
+    printf("Converts the given character to uppercase.\n\n");
+    int ch = 'g';
+    int result = ft_toupper(ch);
+    printf("Variables: ch = %c\n", ch);
+    printf("Function call: ft_toupper(ch);\n");
+    printf("After: result = %c\n\n", result);
 }
