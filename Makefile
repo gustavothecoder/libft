@@ -25,7 +25,8 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_isalnum.c \
 				./lib/ft_libc/ft_isascii.c \
 				./lib/ft_libc/ft_isprint.c \
-				./lib/ft_libc/ft_toupper.c
+				./lib/ft_libc/ft_toupper.c \
+				./lib/ft_libc/ft_tolower.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -59,6 +60,7 @@ ft_libc_tests:
 		./tests/ft_libc/ft_isascii_tests.c \
 		./tests/ft_libc/ft_isprint_tests.c \
 		./tests/ft_libc/ft_toupper_tests.c \
+		./tests/ft_libc/ft_tolower_tests.c \
 		$(FT_LIBC_FILES)
 
 tests: ft_libc_tests
