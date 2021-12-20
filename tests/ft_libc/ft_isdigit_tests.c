@@ -10,6 +10,7 @@ void run_ft_isdigit_tests() {
     when_ch_is_not_a_number();
 }
 
+// to-do: use all digits
 static void when_ch_is_a_positive_number() {
     int result = ft_isdigit(4);
 
