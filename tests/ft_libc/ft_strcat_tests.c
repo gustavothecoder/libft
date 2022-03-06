@@ -1,6 +1,7 @@
 #include "tests.h"
 
-void run_ft_strcat_tests() {
+void run_ft_strcat_tests()
+{
     char str[50] = "Hello ";
     char str2[50] = "World!";
 

@@ -30,7 +30,8 @@ static void run_ft_isprint_example();
 static void run_ft_toupper_example();
 static void run_ft_tolower_example();
 
-int main() {
+int main()
+{
     run_ft_memset_example();
     run_ft_bzero_example();
     run_ft_memcpy_example();
@@ -62,7 +63,8 @@ int main() {
     return 0;
 }
 
-static void run_ft_memset_example() {
+static void run_ft_memset_example()
+{
     printf("--- ft_memset ---------------------------------------------------------\n");
     printf("Copies the value ch (after conversion to unsigned char as if by (unsigned char)ch)\n");
     printf("into each of the first count characters of the object pointed to by dest.\n\n");
@@ -73,7 +75,8 @@ static void run_ft_memset_example() {
     printf("After: %s\n\n", str);
 }
 
-static void run_ft_bzero_example() {
+static void run_ft_bzero_example()
+{
     printf("--- ft_bzero ----------------------------------------------------------\n");
     printf("Erases the data in the n bytes of the memory starting at the location pointed\n");
     printf("to by str, by writing zeros (bytes containing '\\0') to that area.\n\n");
@@ -84,7 +87,8 @@ static void run_ft_bzero_example() {
     printf("After: %s (was erased)\n\n", str);
 }
 
-static void run_ft_memcpy_example() {
+static void run_ft_memcpy_example()
+{
     printf("--- ft_memcpy ---------------------------------------------------------\n");
     printf("Copies count characters from the object pointed to by src to the object\n");
     printf("pointed to by dest. Both objects are interpreted as arrays of unsigned char.\n\n");
@@ -96,7 +100,8 @@ static void run_ft_memcpy_example() {
     printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
-static void run_ft_memccpy_example() {
+static void run_ft_memccpy_example()
+{
     printf("--- ft_memccpy --------------------------------------------------------\n");
     printf("Copies characters from the object pointed to by src to the object pointed\n");
     printf("to by dest, stopping after any of the next two conditions are satisfied:\n");
@@ -110,7 +115,8 @@ static void run_ft_memccpy_example() {
     printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
-static void run_ft_memmove_example() {
+static void run_ft_memmove_example()
+{
     printf("--- ft_memmove --------------------------------------------------------\n");
     printf("Copies count characters from the object pointed to by src to the object\n");
     printf("pointed to by dest. Both objects are interpreted as arrays of unsigned char.\n");
@@ -125,7 +131,8 @@ static void run_ft_memmove_example() {
     printf("After: src = %s, dest = %s\n\n", src, dest);
 }
 
-static void run_ft_memcmp_example() {
+static void run_ft_memcmp_example()
+{
     printf("--- ft_memcmp ---------------------------------------------------------\n");
     printf("Compares the first count characters of the objects pointed to by lhs and rhs.\n");
     printf("The comparison is done lexicographically.\n\n");
@@ -137,7 +144,8 @@ static void run_ft_memcmp_example() {
     printf("Result: %i\n\n", result);
 }
 
-static void run_ft_memchr_example() {
+static void run_ft_memchr_example()
+{
     printf("--- ft_memchr ---------------------------------------------------------\n");
     printf("Finds the first occurrence of ch (after conversion to unsigned char as\n");
     printf("if by (unsigned char)ch) in the initial count characters\n");
@@ -149,7 +157,8 @@ static void run_ft_memchr_example() {
     printf("Result: %s\n\n", result);
 }
 
-static void run_ft_strlen_example() {
+static void run_ft_strlen_example()
+{
     printf("--- ft_strlen ---------------------------------------------------------\n");
     printf("Returns the length of the given null-terminated byte string, that is,\n");
     printf("the number of characters in a character array whose first element is\n");
@@ -161,7 +170,8 @@ static void run_ft_strlen_example() {
     printf("Result: %i\n\n", ans);
 }
 
-static void run_ft_strdup_example() {
+static void run_ft_strdup_example()
+{
     printf("--- ft_strdup ---------------------------------------------------------\n");
     printf("Returns a pointer to a null-terminated byte string, which is a duplicate\n");
     printf("of the string pointed to by str1.\n\n");
@@ -173,7 +183,8 @@ static void run_ft_strdup_example() {
     free(str2);
 }
 
-static void run_ft_strcpy_example() {
+static void run_ft_strcpy_example()
+{
     printf("--- ft_strcpy ---------------------------------------------------------\n");
     printf("Copies the null-terminated byte string pointed to by src, including the\n");
     printf("null terminator, to the character array whose first element is pointed to by dest.\n\n");
@@ -185,7 +196,8 @@ static void run_ft_strcpy_example() {
     printf("After: dest = %s\n\n", dest);
 }
 
-static void run_ft_strncpy_example() {
+static void run_ft_strncpy_example()
+{
     printf("--- ft_strncpy --------------------------------------------------------\n");
     printf("Copies at most count characters of the character array pointed to by src\n");
     printf("(including the terminating null character, but not any of the characters\n");
@@ -198,7 +210,8 @@ static void run_ft_strncpy_example() {
     printf("After: dest = %s\n\n", dest);
 }
 
-static void run_ft_strcat_example() {
+static void run_ft_strcat_example()
+{
     printf("--- ft_strcat ---------------------------------------------------------\n");
     printf("Appends a copy of the null-terminated byte string pointed to by src to\n");
     printf("the end of the null-terminated byte string pointed to by dest.\n");
@@ -212,7 +225,8 @@ static void run_ft_strcat_example() {
     printf("After: dest = %s\n\n", dest);
 }
 
-static void run_ft_strncat_example() {
+static void run_ft_strncat_example()
+{
     printf("--- ft_strncat --------------------------------------------------------\n");
     printf("Appends at most count characters from the character array pointed to by\n");
     printf("src, stopping if the null character is found, to the end of the\n");
@@ -228,7 +242,8 @@ static void run_ft_strncat_example() {
     printf("After: dest = %s\n\n", dest);
 }
 
-static void run_ft_strlcat_example() {
+static void run_ft_strlcat_example()
+{
     printf("--- ft_strlcat --------------------------------------------------------\n");
     printf("The strlcat() function appends the NUL-terminated string src to the end\n");
     printf("of dest. It will append at most size - strlen(dst) - 1 bytes,\n");
@@ -241,7 +256,8 @@ static void run_ft_strlcat_example() {
     printf("After: dest = %s\n\n", dest);
 }
 
-static void run_ft_strchr_example() {
+static void run_ft_strchr_example()
+{
     printf("--- ft_strchr ---------------------------------------------------------\n");
     printf("Finds the first occurrence of ch (after conversion to char as if by\n");
     printf("(char)ch) in the null-terminated byte string pointed to by str (each\n");
@@ -256,7 +272,8 @@ static void run_ft_strchr_example() {
     printf("After: result = %c (%p)\n\n", *result, result);
 }
 
-static void run_ft_strrchr_example() {
+static void run_ft_strrchr_example()
+{
     printf("--- ft_strrchr --------------------------------------------------------\n");
     printf("Finds the last occurrence of ch (after conversion to char as if by\n");
     printf("(char)ch) in the null-terminated byte string pointed to by str (each\n");
@@ -271,7 +288,8 @@ static void run_ft_strrchr_example() {
     printf("After: result = %c (%p)\n\n", *result, result);
 }
 
-static void run_ft_strstr_example() {
+static void run_ft_strstr_example()
+{
     printf("--- ft_strstr ---------------------------------------------------------\n");
     printf("Finds the first occurrence of the null-terminated byte string pointed to\n");
     printf("by substr in the null-terminated byte string pointed to by str.\n\n");
@@ -282,7 +300,8 @@ static void run_ft_strstr_example() {
     printf("After: result = %c (%p)\n\n", *result, result);
 }
 
-static void run_ft_strnstr_example() {
+static void run_ft_strnstr_example()
+{
     printf("--- ft_strnstr --------------------------------------------------------\n");
     printf("The strnstr() function locates the first occurrence of the null-termi-nated\n");
     printf("string substr in the string str, where not more than count characters are\n");
@@ -294,7 +313,8 @@ static void run_ft_strnstr_example() {
     printf("After: result = %c (%p)\n\n", *result, result);
 }
 
-static void run_ft_strcmp_example() {
+static void run_ft_strcmp_example()
+{
     printf("--- ft_strcmp ---------------------------------------------------------\n");
     printf("Compares two null-terminated byte strings lexicographically.\n\n");
     char *lhs = "Hello World!";
@@ -305,7 +325,8 @@ static void run_ft_strcmp_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_strncmp_example() {
+static void run_ft_strncmp_example()
+{
     printf("--- ft_strncmp --------------------------------------------------------\n");
     printf("Compares at most count characters of two possibly null-terminated arrays.\n");
     printf("The comparison is done lexicographically. Characters following the null\n");
@@ -318,7 +339,8 @@ static void run_ft_strncmp_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_atoi_example() {
+static void run_ft_atoi_example()
+{
     printf("--- ft_atoi -----------------------------------------------------------\n");
     printf("Interprets an integer value in a byte string pointed to by str. Discards\n");
     printf("any whitespace characters until the first non-whitespace character is\n");
@@ -331,7 +353,8 @@ static void run_ft_atoi_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_isalpha_example() {
+static void run_ft_isalpha_example()
+{
     printf("--- ft_isalpha --------------------------------------------------------\n");
     printf("Checks if the given character is an alphabetic character, i.e. either an\n");
     printf("uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), or a lowercase letter\n");
@@ -343,7 +366,8 @@ static void run_ft_isalpha_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_isdigit_example() {
+static void run_ft_isdigit_example()
+{
     printf("--- ft_isdigit --------------------------------------------------------\n");
     printf("Checks if the given character is a numeric character (0123456789).\n\n");
     int ch = 6;
@@ -353,7 +377,8 @@ static void run_ft_isdigit_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_isalnum_example() {
+static void run_ft_isalnum_example()
+{
     printf("--- ft_isalnum --------------------------------------------------------\n");
     printf("Checks if the given character is an alphanumeric character as classified\n");
     printf("by the current C locale.\n\n");
@@ -364,7 +389,8 @@ static void run_ft_isalnum_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_isascii_example() {
+static void run_ft_isascii_example()
+{
     printf("--- ft_isascii --------------------------------------------------------\n");
     printf("Tests if a given character can be represented as a valid 7–bit US-ASCII\n");
     printf("character.\n\n");
@@ -375,7 +401,8 @@ static void run_ft_isascii_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_isprint_example() {
+static void run_ft_isprint_example()
+{
     printf("--- ft_isprint --------------------------------------------------------\n");
     printf("Checks if the given character can be printed, i.e. it is either a number\n");
     printf("(0123456789), an uppercase letter (ABCDEFGHIJKLMNOPQRSTUVWXYZ), a lowercase\n");
@@ -388,7 +415,8 @@ static void run_ft_isprint_example() {
     printf("After: result = %d\n\n", result);
 }
 
-static void run_ft_toupper_example() {
+static void run_ft_toupper_example()
+{
     printf("--- ft_toupper --------------------------------------------------------\n");
     printf("Converts the given character to uppercase.\n\n");
     int ch = 'g';
@@ -398,7 +426,8 @@ static void run_ft_toupper_example() {
     printf("After: result = %c\n\n", result);
 }
 
-static void run_ft_tolower_example() {
+static void run_ft_tolower_example()
+{
     printf("--- ft_tolower --------------------------------------------------------\n");
     printf("Converts the given character to lowercase.\n\n");
     int ch = 'G';

@@ -3,12 +3,14 @@
 static void when_an_empty_string_is_sent();
 static void when_a_common_string_is_sent();
 
-void run_ft_strdup_tests() {
+void run_ft_strdup_tests()
+{
     when_an_empty_string_is_sent();
     when_a_common_string_is_sent();
 }
 
-static void when_an_empty_string_is_sent() {
+static void when_an_empty_string_is_sent()
+{
     const char *str1 = "";
 
     char *str2 = ft_strdup(str1);
@@ -17,7 +19,8 @@ static void when_an_empty_string_is_sent() {
     free(str2);
 }
 
-static void when_a_common_string_is_sent() {
+static void when_a_common_string_is_sent()
+{
     const char *str1 = "Duplicate me!";
 
     char *str2 = ft_strdup(str1);

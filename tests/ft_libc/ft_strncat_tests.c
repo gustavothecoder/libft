@@ -4,13 +4,15 @@ static void when_count_is_less_than_src_size();
 static void when_count_is_equal_to_src_size();
 static void when_count_is_greater_than_src_size();
 
-void run_ft_strncat_tests() {
+void run_ft_strncat_tests()
+{
     when_count_is_less_than_src_size();
     when_count_is_equal_to_src_size();
     when_count_is_greater_than_src_size();
 }
 
-static void when_count_is_less_than_src_size() {
+static void when_count_is_less_than_src_size()
+{
     char dest[15] = "Hello ";
     char src[7] = "World!";
 
@@ -20,7 +22,8 @@ static void when_count_is_less_than_src_size() {
     assert(result == dest);
 }
 
-static void when_count_is_equal_to_src_size() {
+static void when_count_is_equal_to_src_size()
+{
     char dest[15] = "Hello ";
     char src[7] = "World!";
 
@@ -30,7 +33,8 @@ static void when_count_is_equal_to_src_size() {
     assert(result == dest);
 }
 
-static void when_count_is_greater_than_src_size() {
+static void when_count_is_greater_than_src_size()
+{
     char dest[15] = "Hello ";
     char src[7] = "World!";
 
