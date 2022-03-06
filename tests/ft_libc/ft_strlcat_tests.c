@@ -1,6 +1,7 @@
 #include "tests.h"
 
-void run_ft_strlcat_tests() {
+void run_ft_strlcat_tests()
+{
     size_t dest_sz = 37;
     char dest[37] = "First part ";
     char src1[] = "| Second part ";

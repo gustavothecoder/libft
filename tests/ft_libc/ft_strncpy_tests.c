@@ -4,13 +4,15 @@ static void when_count_is_less_than_src_size();
 static void when_count_is_the_same_size_as_src();
 static void when_count_is_greater_than_src_size();
 
-void run_ft_strncpy_tests() {
+void run_ft_strncpy_tests()
+{
     when_count_is_less_than_src_size();
     when_count_is_the_same_size_as_src();
     when_count_is_greater_than_src_size();
 }
 
-static void when_count_is_less_than_src_size() {
+static void when_count_is_less_than_src_size()
+{
     char src[] = "abcdef";
     char dest[7];
 
@@ -20,7 +22,8 @@ static void when_count_is_less_than_src_size() {
     assert(result == dest);
 }
 
-static void when_count_is_the_same_size_as_src() {
+static void when_count_is_the_same_size_as_src()
+{
     char src[] = "abcdef";
     char dest[7];
 
@@ -30,7 +33,8 @@ static void when_count_is_the_same_size_as_src() {
     assert(result == dest);
 }
 
-static void when_count_is_greater_than_src_size() {
+static void when_count_is_greater_than_src_size()
+{
     char src[] = "abcdef";
     char dest[9];
 
