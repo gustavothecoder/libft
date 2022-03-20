@@ -14,7 +14,7 @@ void run_ft_strncpy_tests()
 static void when_count_is_less_than_src_size()
 {
     char src[] = "abcdef";
-    char dest[7];
+    char dest[7] = "";
 
     char *result = ft_strncpy(dest, src, 3);
 
