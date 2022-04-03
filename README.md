@@ -42,11 +42,17 @@ instructions in the repo, so you can
 | `ft_toupper` | `<ctype.h>`  | [Click me](https://en.cppreference.com/w/c/string/byte/toupper)         |
 | `ft_tolower` | `<ctype.h>`  | [Click me](https://en.cppreference.com/w/c/string/byte/tolower)         |
 
+### Additional functions
+
+| Function     | Description                                                                 |
+| :----------- | :-------------------------------------------------------------------------- |
+| `ft_memalloc`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+
 ## How to use
 
 Once you have the lib in your project, you can use the functions like in
 [examples.c](https://github.com/gustavothecoder/libft/blob/main/examples.c).
-    
+
 ## Running Tests
 
 To run tests, run the following command:
