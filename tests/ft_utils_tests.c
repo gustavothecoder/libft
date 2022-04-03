@@ -5,6 +5,7 @@ int main()
 {
     run_ft_memalloc_tests();
     run_ft_memdel_tests();
+    run_ft_strnew_tests();
     print_report();
     return 0;
 }
