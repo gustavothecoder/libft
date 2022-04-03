@@ -28,9 +28,11 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_toupper.c \
 				./lib/ft_libc/ft_tolower.c
 
+FT_UTILS_FILES = ./lib/ft_utils/ft_memalloc.c
+
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
-	$(CC) -o tests.out \
+	$(CC) -o ft_libc_tests.out \
 		./tests/c_tester.c \
 		./tests/ft_libc_tests.c \
 		./tests/ft_libc/ft_memset_tests.c \
@@ -63,7 +65,16 @@ ft_libc_tests:
 		./tests/ft_libc/ft_tolower_tests.c \
 		$(FT_LIBC_FILES)
 
-tests: ft_libc_tests
+ft_utils_tests:
+	@echo "Compiling ft_utils tests..."
+	$(CC) -o ft_utils_tests.out \
+		./tests/c_tester.c \
+		$(FT_LIBC_FILES) \
+		./tests/ft_utils_tests.c \
+		./tests/ft_utils/ft_memalloc_tests.c \
+		$(FT_UTILS_FILES)
+
+tests: ft_libc_tests ft_utils_tests
 
 examples:
 	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
