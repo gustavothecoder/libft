@@ -44,9 +44,12 @@ instructions in the repo, so you can
 
 ### Additional functions
 
-| Function     | Description                                                                 |
-| :----------- | :-------------------------------------------------------------------------- |
-| `ft_memalloc`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| Function      | Description                                                                 |
+| :------------ | :-------------------------------------------------------------------------- |
+| `ft_memalloc` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_memdel`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strnew`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strdel`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
