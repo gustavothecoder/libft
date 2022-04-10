@@ -9,6 +9,7 @@ int main()
     run_ft_strdel_tests();
     run_ft_strclr_tests();
     run_ft_striter_tests();
+    run_ft_striteri_tests();
     print_report();
     return 0;
 }
