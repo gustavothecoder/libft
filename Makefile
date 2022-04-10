@@ -31,7 +31,8 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 FT_UTILS_FILES = ./lib/ft_utils/ft_memalloc.c \
 				 ./lib/ft_utils/ft_memdel.c \
 				 ./lib/ft_utils/ft_strnew.c \
-				 ./lib/ft_utils/ft_strdel.c
+				 ./lib/ft_utils/ft_strdel.c \
+				 ./lib/ft_utils/ft_strclr.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -78,6 +79,7 @@ ft_utils_tests:
 		./tests/ft_utils/ft_memdel_tests.c \
 		./tests/ft_utils/ft_strnew_tests.c \
 		./tests/ft_utils/ft_strdel_tests.c \
+		./tests/ft_utils/ft_strclr_tests.c \
 		$(FT_UTILS_FILES)
 
 tests: ft_libc_tests ft_utils_tests
