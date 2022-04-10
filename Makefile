@@ -1,4 +1,5 @@
 CC = gcc
+DEFAULT_CC_FLAGS = -g -o
 FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 				./lib/ft_libc/ft_bzero.c \
 				./lib/ft_libc/ft_memcpy.c \
@@ -31,11 +32,15 @@ FT_LIBC_FILES = ./lib/ft_libc/ft_memset.c \
 FT_UTILS_FILES = ./lib/ft_utils/ft_memalloc.c \
 				 ./lib/ft_utils/ft_memdel.c \
 				 ./lib/ft_utils/ft_strnew.c \
-				 ./lib/ft_utils/ft_strdel.c
+				 ./lib/ft_utils/ft_strdel.c \
+				 ./lib/ft_utils/ft_strclr.c \
+				 ./lib/ft_utils/ft_striter.c \
+				 ./lib/ft_utils/ft_striteri.c \
+				 ./lib/ft_utils/ft_strmap.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
-	$(CC) -o ft_libc_tests.out \
+	$(CC) $(DEFAULT_CC_FLAGS) ft_libc_tests.out \
 		./tests/c_tester.c \
 		./tests/ft_libc_tests.c \
 		./tests/ft_libc/ft_memset_tests.c \
@@ -70,7 +75,7 @@ ft_libc_tests:
 
 ft_utils_tests:
 	@echo "Compiling ft_utils tests..."
-	$(CC) -o ft_utils_tests.out \
+	$(CC) $(DEFAULT_CC_FLAGS) ft_utils_tests.out \
 		./tests/c_tester.c \
 		$(FT_LIBC_FILES) \
 		./tests/ft_utils_tests.c \
@@ -78,12 +83,16 @@ ft_utils_tests:
 		./tests/ft_utils/ft_memdel_tests.c \
 		./tests/ft_utils/ft_strnew_tests.c \
 		./tests/ft_utils/ft_strdel_tests.c \
+		./tests/ft_utils/ft_strclr_tests.c \
+		./tests/ft_utils/ft_striter_tests.c \
+		./tests/ft_utils/ft_striteri_tests.c \
+		./tests/ft_utils/ft_strmap_tests.c \
 		$(FT_UTILS_FILES)
 
 tests: ft_libc_tests ft_utils_tests
 
 examples:
-	$(CC) -o examples.out ./examples.c $(FT_LIBC_FILES)
+	$(CC) $(DEFAULT_CC_FLAGS) examples.out ./examples.c $(FT_LIBC_FILES)
 
 clean:
 	rm examples.out ft_libc_tests.out
