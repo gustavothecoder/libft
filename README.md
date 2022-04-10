@@ -53,6 +53,7 @@ instructions in the repo, so you can
 | `ft_strclr`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_striter`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_striteri` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strmap`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
