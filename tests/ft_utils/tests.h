@@ -9,3 +9,6 @@ void run_ft_strclr_tests();
 void run_ft_striter_tests();
 void run_ft_striteri_tests();
 void run_ft_strmap_tests();
+void run_ft_strmapi_tests();
+void run_ft_strequ_tests();
+void run_ft_strnequ_tests();
