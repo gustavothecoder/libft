@@ -13,6 +13,7 @@ int main()
     run_ft_strmap_tests();
     run_ft_strmapi_tests();
     run_ft_strequ_tests();
+    run_ft_strnequ_tests();
     print_report();
     return 0;
 }
