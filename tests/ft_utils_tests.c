@@ -12,6 +12,7 @@ int main()
     run_ft_striteri_tests();
     run_ft_strmap_tests();
     run_ft_strmapi_tests();
+    run_ft_strequ_tests();
     print_report();
     return 0;
 }

@@ -55,6 +55,7 @@ instructions in the repo, so you can
 | `ft_striteri` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_strmap`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_strmapi`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strequ`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
