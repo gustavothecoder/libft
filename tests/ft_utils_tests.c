@@ -11,6 +11,7 @@ int main()
     run_ft_striter_tests();
     run_ft_striteri_tests();
     run_ft_strmap_tests();
+    run_ft_strmapi_tests();
     print_report();
     return 0;
 }
