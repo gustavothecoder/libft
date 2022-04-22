@@ -14,6 +14,7 @@ int main()
     run_ft_strmapi_tests();
     run_ft_strequ_tests();
     run_ft_strnequ_tests();
+    run_ft_strsub_tests();
     print_report();
     return 0;
 }
