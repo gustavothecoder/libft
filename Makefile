@@ -39,7 +39,10 @@ FT_UTILS_FILES = ./lib/ft_utils/ft_memalloc.c \
 				 ./lib/ft_utils/ft_strmap.c \
 				 ./lib/ft_utils/ft_strmapi.c \
 				 ./lib/ft_utils/ft_strequ.c \
-				 ./lib/ft_utils/ft_strnequ.c
+				 ./lib/ft_utils/ft_strnequ.c \
+				 ./lib/ft_utils/ft_strsub.c \
+				 ./lib/ft_utils/ft_strjoin.c \
+				 ./lib/ft_utils/ft_strtrim.c
 
 ft_libc_tests:
 	@echo "Compiling ft_libc tests..."
@@ -93,6 +96,9 @@ ft_utils_tests:
 		./tests/ft_utils/ft_strmapi_tests.c \
 		./tests/ft_utils/ft_strequ_tests.c \
 		./tests/ft_utils/ft_strnequ_tests.c \
+		./tests/ft_utils/ft_strsub_tests.c \
+		./tests/ft_utils/ft_strjoin_tests.c \
+		./tests/ft_utils/ft_strtrim_tests.c \
 		$(FT_UTILS_FILES)
 
 tests: ft_libc_tests ft_utils_tests
