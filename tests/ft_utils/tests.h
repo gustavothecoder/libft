@@ -15,3 +15,4 @@ void run_ft_strnequ_tests();
 void run_ft_strsub_tests();
 void run_ft_strjoin_tests();
 void run_ft_strtrim_tests();
+void run_ft_strsplit_tests();
