@@ -7,6 +7,9 @@
 #define UPPERCASE_ALPHABET "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #define LOWERCASE_ALPHABET "abcdefghijklmnopqrstuvwxyz"
 #define PUNCTUATION_CHARS "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+#define INT_NUMERICAL_SYSTEM_SIZE 11
+
+extern const int INT_NUMERICAL_SYSTEM[INT_NUMERICAL_SYSTEM_SIZE];
 
 void *ft_memset(void *dest, int ch, size_t count);
 void ft_bzero(void *dest, size_t count);

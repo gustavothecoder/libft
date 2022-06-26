@@ -34,7 +34,6 @@ static int is_valid(const char *valid_chars, const char c)
 
 static int to_int(const char *number)
 {
-    int multipliers[11] = {0, 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
     int multiplier_i = ft_strlen(number);
     int result = 0;
     int negative = 0;
@@ -45,7 +44,7 @@ static int to_int(const char *number)
             negative = 1;
             continue;
         }
-        result += (*number - '0') * multipliers[multiplier_i];
+        result += (*number - '0') * INT_NUMERICAL_SYSTEM[multiplier_i];
     }
     return negative ? -result : result;
 }
