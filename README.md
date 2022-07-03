@@ -62,6 +62,7 @@ instructions in the repo, so you can
 | `ft_strtrim`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_strsplit` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_itoa`     | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putchar`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
