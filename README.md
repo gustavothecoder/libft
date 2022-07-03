@@ -46,22 +46,29 @@ instructions in the repo, so you can
 
 | Function      | Description                                                                 |
 | :------------ | :-------------------------------------------------------------------------- |
-| `ft_memalloc` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_memdel`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strnew`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strdel`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strclr`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_striter`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_striteri` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strmap`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strmapi`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strequ`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strnequ`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strsub`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strjoin`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strtrim`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_strsplit` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
-| `ft_itoa`     | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_memalloc`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_memdel`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strnew`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strdel`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strclr`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_striter`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_striteri`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strmap`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strmapi`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strequ`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strnequ`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strsub`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strjoin`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strtrim`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_strsplit`  | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_itoa`      | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putchar`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putstr`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putendl`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putnbr`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putchar_fd`| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putstr_fd` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putendl_fd`| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
