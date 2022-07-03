@@ -67,6 +67,7 @@ instructions in the repo, so you can
 | `ft_putendl`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_putnbr`    | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_putchar_fd`| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_putstr_fd` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
