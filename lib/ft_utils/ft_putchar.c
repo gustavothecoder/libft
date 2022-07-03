@@ -2,6 +2,5 @@
 
 void ft_putchar(char c)
 {
-    int number_of_chars = 1;
-    write(STDOUT_FILENO, &c, number_of_chars);
+    ft_putchar_fd(c, STDOUT_FILENO);
 }
