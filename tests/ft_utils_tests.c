@@ -1,5 +1,5 @@
 #include "ft_utils/tests.h"
-#include "../lib/ft_utils/ft_utils.h"
+#include "../libft.h"
 
 int main()
 {

@@ -1,4 +1,4 @@
-#include "ft_libc.h"
+#include "../../libft.h"
 
 char *ft_strdup(const char *str1)
 {

@@ -1,4 +1,4 @@
-#include "ft_libc.h"
+#include "../../libft.h"
 
 void *ft_memchr(const void *ptr, int ch, size_t count)
 {

@@ -1,4 +1,4 @@
-#include "ft_utils.h"
+#include "../../libft.h"
 
 static size_t count_substrings(char const *s, size_t s_size, char c);
 static int non_c_char(char current, char c);

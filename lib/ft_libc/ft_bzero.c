@@ -1,4 +1,4 @@
-#include "ft_libc.h"
+#include "../../libft.h"
 
 void ft_bzero(void *dest, size_t count)
 {
