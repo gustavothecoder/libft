@@ -1,4 +1,4 @@
-#include "ft_libc.h"
+#include "../../libft.h"
 
 int ft_tolower(int ch)
 {

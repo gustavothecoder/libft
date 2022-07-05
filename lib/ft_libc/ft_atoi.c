@@ -1,4 +1,4 @@
-#include "ft_libc.h"
+#include "../../libft.h"
 
 static int is_valid(const char *valid_chars, const char c);
 static int to_int(const char *number);
