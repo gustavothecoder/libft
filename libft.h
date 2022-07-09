@@ -12,6 +12,18 @@
 
 extern const int INT_NUMERICAL_SYSTEM[INT_NUMERICAL_SYSTEM_SIZE];
 
+#ifndef LIBFT_H
+#define LIBFT_H
+
+typedef struct s_list
+{
+    void *content;
+    size_t content_size;
+    struct s_list *next;
+} t_list;
+
+#endif
+
 // standard library functions
 void *ft_memset(void *dest, int ch, size_t count);
 void ft_bzero(void *dest, size_t count);
