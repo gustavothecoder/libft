@@ -71,6 +71,12 @@ instructions in the repo, so you can
 | `ft_putendl_fd`| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_putnbr_fd` | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
+### Bonus
+
+| Function      | Description                                                                 |
+| :------------ | :-------------------------------------------------------------------------- |
+| `ft_lstnew`   | [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+
 ## How to use
 
 Once you have the lib in your project, you can use the functions like in
