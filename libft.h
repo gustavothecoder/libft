@@ -79,3 +79,6 @@ void ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char const *s, int fd);
 void ft_putendl_fd(char const *s, int fd);
 void ft_putnbr_fd(int n, int fd);
+
+// list manipulation functions/bonus
+t_list *ft_lstnew(void const *content, size_t content_size);
