@@ -7,6 +7,7 @@ int main()
     run_ft_lstdelone_tests();
     run_ft_lstdel_tests();
     run_ft_lstadd_tests();
+    run_ft_lstiter_tests();
 
     print_report();
 

@@ -79,6 +79,7 @@ instructions in the repo, so you can
 | `ft_lstdelone`| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_lstdel   `| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 | `ft_lstadd   `| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
+| `ft_lstiter  `| [Click me](https://github.com/gustavothecoder/libft/blob/main/libft.en.pdf) |
 
 ## How to use
 
