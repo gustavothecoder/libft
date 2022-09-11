@@ -92,7 +92,7 @@ Once you have the lib in your project, you can use the functions like in
 To run tests, run the following command:
 
 ```bash
-  make tests && ./tests.out
+  make tests && ./ft_libc_tests.out && ./ft_utils_tests.out && ./ft_list_tests.out
 ```
 
 ## Makefile
