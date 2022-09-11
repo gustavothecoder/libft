@@ -4,3 +4,4 @@
 void run_ft_lstnew_tests();
 void run_ft_lstdelone_tests();
 void run_ft_lstdel_tests();
+void run_ft_lstadd_tests();
